@@ -97,7 +97,7 @@ function handlefb(fav, meal, court){
         var message = court + " Dining Court has " + fav + " for " + meal + " today!";
         console.log(message);
           //sendAtTime(result[m].phone, message, result[m].provider);
-          //mailer.mail(snapshot.val().number, message, snapshot.val().carrier);
+          mailer.mail(snapshot.val().number, message, snapshot.val().carrier);
           firebase.database().goOffline();
       }
 
